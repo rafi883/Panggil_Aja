@@ -1,0 +1,49 @@
+body{
+   margin:0;
+   font-family: "Podkova", serif;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+   justify-content: space-between;
+   align-content: center;
+   border:solid black;
+}
+
+.service{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.service p{
+    margin-bottom: 1rem;
+}
+
+.service .tagline{
+    justify-self: end;
+    text-align: right;
+    margin-top: 2rem;
+}
+.container-img{
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: 3rem;
+    display: flex;
+   
+
+
+}
+
+.container-img img{
+    width: 85%;
+    height: auto;
+}
+
+.img1,.img2,.img3,.img4{
+    transition: all 0.3s ease;
+}
+.img1:hover,.img2:hover,.img3:hover,.img4:hover{
+      transform: scale(1.05);
+  
+
+}

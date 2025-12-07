@@ -1,0 +1,52 @@
+/* .admin-dashboard, .admin-detail-order {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.table-orders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-orders th, .table-orders td {
+    border: 1px solid #ccc;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+
+.table-orders th {
+    background-color: #007bff;
+    color: white;
+}
+
+.table-orders tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.status-badge[data-status="tertunda"] { color: orange; font-weight: bold; }
+.status-badge[data-status="diproses"] { color: blue; font-weight: bold; }
+.status-badge[data-status="selesai"] { color: green; font-weight: bold; }
+.status-badge[data-status="dibatalkan"] { color: red; font-weight: bold; }
+
+.btn-detail, .btn-kembali {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+
+.btn-detail:hover, .btn-kembali:hover {
+   background-color: rgba(113, 230, 104, 1);
+} */

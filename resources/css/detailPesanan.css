@@ -1,0 +1,123 @@
+body{
+
+   margin:0;
+   height: 99vh;
+   margin-left:0;
+   margin-right: 4rem;
+   font-family: "Podkova", serif;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+   align-content: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   justify-content: center;
+}
+
+
+.detail-pesanan-user p{
+   display: flex;
+   flex-direction: column;
+}
+.info-pesanan-utama{
+    display: flex;
+}
+.detail-pesanan-user h1{
+    color: white;
+    margin-left: 2rem;
+}
+.container-pesanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    gap:1rem;
+}
+.pesanan{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-color: solid black;
+    margin-left: 0;
+    color: white;
+    height: 15vh;
+    font-family: "Podkova", serif;
+    font-size: larger;
+    font-weight: bold;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    padding-right: 5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 5rem;
+    width: 80vw;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+
+
+}
+.info-pesanan{
+    justify-self: center;
+    align-self: center;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+.info-pesanan select{
+    padding: 5px;
+    width: 13vw;
+    height: 6vh;
+    border: none;
+    background-color: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.info-pesanan[data-status="todo"] {
+    background-color: #f0ad4e; /* Oranye */
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.info-pesanan[data-status="doing"] {
+    background-color: #5bc0de; /* Biru */
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.info-pesanan[data-status="done"] {
+    background-color: #5cb85c; /* Hijau */
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.info-pesanan[data-status="cancel"] {
+    background-color: #ff2a2a; /* Oranye */
+    color: white;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.pesanan .gmbr-kiri{
+    display: flex;
+    gap:20px;
+    color: white;
+    font-family: "Podkova", serif;
+    font-size: larger;
+    font-weight: bold;
+
+}
+
+.gmbr-kiri img{
+    width: 15h;
+    height: 15vh;
+
+}
+
+
+
+
+

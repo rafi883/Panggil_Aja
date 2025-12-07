@@ -1,0 +1,382 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+   margin:0;
+   font-family: "Podkova", serif;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+   align-content: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+
+/* navbar */
+.navbar{
+    display: flex;
+    background-color:transparent;
+    min-width: 400px;
+    font-family: "Podkova", serif;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    padding: 5px;
+    margin: 1rem;
+    top:0;
+    margin-top: 0;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    transition: backdrop-filter 0.3s ease, background-color 0.3s ease;
+
+
+}
+
+#navbar.scrolled {
+   backdrop-filter: blur(6px);
+    background-color:rgba(90, 84, 84, 0.4) ; /* semi-transparan */
+  -webkit-backdrop-filter: blur(20px); /* untuk Safari */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+
+
+}
+
+.logo{
+    width: 5%;
+    height: auto;
+    margin-right: auto;
+}
+
+button{
+    font-weight: bolder;
+    background-color: rgba(113, 230, 104, 1);
+    width: 100px;
+    border-color: white;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+
+    width: 200vh;
+    justify-content: space-evenly;
+    gap:79px;
+    align-items: center;
+
+}
+
+.navbar-nav{
+    text-decoration: none;
+    color: white;
+}
+
+/* dashboard */
+.dashboard{
+ display: flex;
+ justify-content: space-between;
+}
+.container-kiri{
+    color: white;
+    padding: 3rem;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-left: 3rem;
+    justify-content: center;
+    align-content: center;
+}
+
+.container-kiri h1{
+
+
+    margin-top: 7rem;
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.container-kiri p{
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.tombolhero{
+    display: flex;
+    gap: 8px;
+    margin-top: 5rem;
+
+}
+button{
+    font-family: "podkova", serif;
+    font-weight: bold;
+    border-color: white;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(113, 230, 104, 1);
+    text-align: center;
+    width: 8rem;
+    height: 32px;
+    border-radius: 30px;
+
+}
+
+.tombolhero .keranjang{
+    background-color: transparent;
+    border: none;
+
+}
+
+.btn-no-admin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
+
+}
+
+.btn-no-admin img{
+    width: 60%;
+    height: 60%;
+}
+
+.tombolhero .keranjang img{
+    width: 2rem;
+    margin-right:5rem;
+}
+
+.container-kanan{
+
+    justify-content: end;
+    z-index: 55;
+    align-content: center;
+    top:0;
+    height: 450px;
+    right: 0;
+    left:0;
+}
+.hero-image{
+    width: 100%;
+    height: 120%;
+}
+
+
+
+/* about */
+
+.container-about{
+    display: flex;
+    margin-top: 8rem;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.containerKiri img{
+    width: 60%;
+    margin-left:3rem ;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: auto;
+    
+}
+
+.containerKanan{
+    color:white;
+    font-weight: bold;
+    width: 400px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 3rem;
+}
+
+.containerKanan .tagline{
+
+    word-spacing: 5px;
+
+}
+
+
+
+.button-contKanan{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 38px;
+
+
+}
+
+.button-contKanan button{
+
+    font-family: "podkova", serif;
+    font-weight: bold;
+    border-color: white;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(113, 230, 104, 1);
+    text-align: center;
+    width: 7.5rem;
+    height: 32px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+
+}
+
+.button-contKanan button:hover{
+      transform: scale(1.05);
+}
+
+
+.img-follower{
+    display:flex;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.img-follower img{
+    justify-self: center;
+    align-self: center;
+    width: auto;
+    border-color: white;
+    height: 70%;
+}
+
+/* service */
+.service{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+.service p{
+    margin-bottom: 1rem;
+}
+
+.service .tagline{
+    justify-self: end;
+    text-align: right;
+    margin-top: 2rem;
+}
+.container-img{
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: 3rem;
+    display: flex;
+
+
+
+}
+
+.container-img img{
+    width: 85%;
+    height: auto;
+}
+
+.img1,.img2,.img3,.img4{
+    transition: all 0.3s ease;
+}
+.img1:hover,.img2:hover,.img3:hover,.img4:hover{
+      transform: scale(1.05);
+
+
+}
+
+
+
+/* contact */
+
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+
+.container-kiri{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   font-family: "Podkova", serif;
+   width: 50vw;
+   margin-top: 0;
+   padding-top: 0;
+   font-weight: bold;
+   color: white;
+   justify-content: center;
+   align-content: center;
+   align-items: start;
+}
+
+.container-kiri h1{
+   font-weight: bolder;
+}
+
+.link-contact{
+   display: flex;
+   flex-direction: column;
+}
+
+.link-contact a{
+   display: flex;
+   color: white;
+   text-decoration: none;
+   gap:10px;
+}
+
+.link-contact img{
+   width: auto;
+   height: 1rem;
+   justify-self: center;
+   align-self: center;
+}
+
+
+.container-kanan{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 8px;
+   align-content: center;
+}
+
+.container-kanan .form-control{
+
+   background-color:rgba(255, 255, 255, 0.4) ;
+   width: 40vw;
+
+}
+
+.btn-message{
+   background-color: rgba(113, 230, 104, 1);
+   height: 3rem;
+   font-size:large;
+   font-weight: bolder ;
+   color: white;
+   border-radius: 15px;
+   border: none;
+}
+
+
+

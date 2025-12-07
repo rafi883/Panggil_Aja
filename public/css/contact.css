@@ -1,0 +1,79 @@
+body{
+   display: flex;
+   margin:0;
+   border:solid black;
+   height: 99vh;
+   margin-left:4rem;
+   margin-right: 4rem;
+   font-family: "Podkova", serif;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+   justify-content: space-evenly;
+   align-content: center;
+}
+
+
+.container-kiri{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   font-family: "Podkova", serif;
+   width: 50vw;
+   font-weight: bold;
+   color: white;
+   justify-content: center;
+   align-content: center;
+   align-items: start;
+}
+
+.container-kiri h1{
+   font-weight: bolder;
+}
+
+.link-contact{
+   display: flex;
+   flex-direction: column;
+}
+
+.link-contact a{
+   display: flex;
+   color: white;
+   text-decoration: none;
+   gap:5px;
+}
+
+.link-contact img{
+   width: auto;
+   height: 1rem;
+   justify-self: center;
+   align-self: center;
+}
+
+
+.container-kanan{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 8px;
+   align-content: center;
+}
+
+.container-kanan .form-control{
+   
+   background-color:rgba(255, 255, 255, 0.4) ;
+   width: 40vw;
+   
+}
+
+.btn-message{
+   background-color: rgba(113, 230, 104, 1);
+   height: 3rem;
+   font-size:large;
+   font-weight: bolder ;
+   color: white;
+   border-radius: 15px;
+   border: none;
+}
+
+
+
+

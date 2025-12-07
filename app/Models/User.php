@@ -9,6 +9,7 @@ use App\Models\Checkouts;
 
 class User extends Authenticatable
 {
+    protected $table ="users";
     use Notifiable;
 
     protected $fillable = [

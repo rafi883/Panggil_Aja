@@ -1,0 +1,338 @@
+/* .admin-dashboard, .admin-detail-order {
+    padding: 2rem;
+
+    color: white;
+    height: 80vh;
+    font-family: "Podkova", serif;
+    margin: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+}
+
+
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.table-orders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.table-orders th, .table-orders td {
+    border: 1px solid #ccc;
+    padding: 0.7rem 1rem;
+    text-align: left;
+}
+
+.table-orders th {
+    background-color: rgba(113, 230, 104, 1);
+    color: white;
+}
+
+
+.status-badge[data-status="tertunda"] { color: orange; font-weight: bold; }
+.status-badge[data-status="diproses"] { color: blue; font-weight: bold; }
+.status-badge[data-status="selesai"] { color: green; font-weight: bold; }
+.status-badge[data-status="dibatalkan"] { color: red; font-weight: bold; }
+
+.btn-detail, .btn-kembali {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+
+.btn-detail:hover, .btn-kembali:hover {
+    background-color: rgba(113, 230, 104, 1);
+} */
+
+
+/* ========== RESET DASAR ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Podkova", serif;
+
+}
+
+body {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+    height: 100vh;
+    color: #e5e7eb;
+}
+
+/* ========== CONTAINER UTAMA ========== */
+.admin-dashboard {
+    padding: 30px;
+}
+
+/* ========== HEADER ========== */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f8fafc;
+}
+
+.dashboard-header .subtitle {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ========== CARD WRAPPER ========== */
+.order-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* ========== CARD ORDER ========== */
+.order-card {
+    background: linear-gradient(145deg, #020617, #020617);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.order-card:hover {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+/* ========== STATUS BADGE ========== */
+.order-status {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* warna status */
+.status-tertunda {
+    background: #f59e0b20;
+    color: #f59e0b;
+}
+
+.status-diproses {
+    background: #3b82f620;
+    color: #3b82f6;
+}
+
+.status-selesai {
+    background: #22c55e20;
+    color: #22c55e;
+}
+
+.status-dibatalkan {
+    background: #ef444420;
+    color: #ef4444;
+}
+
+/* ========== INFO ORDER ========== */
+.order-id {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.order-user {
+    font-size: 14px;
+    color: #94a3b8;
+    margin-bottom: 6px;
+}
+
+.order-email {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.order-total {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #22c55e;
+}
+
+/* ========== BUTTON ========== */
+.btn-detail {
+    display: inline-block;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.btn-detail:hover {
+    scale: 1.02;
+    filter: brightness(1.15);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .admin-dashboard {
+        padding: 20px;
+    }
+}
+
+
+/* === Container Detail Order === */
+.admin-detail-order {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #0b1736, #08102a);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* === Judul === */
+.admin-detail-order h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* === Info Order === */
+.admin-detail-order p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #e5e5e5;
+}
+
+/* === Badge Status === */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Warna status via attribute */
+.status-badge[data-status="tertunda"] {
+    background: #facc15;
+    color: #1f2937;
+}
+
+.status-badge[data-status="diproses"] {
+    background: #60a5fa;
+    color: #fff;
+}
+
+.status-badge[data-status="selesai"] {
+    background: #22c55e;
+    color: #fff;
+}
+
+.status-badge[data-status="dibatalkan"] {
+    background: #ef4444;
+    color: #fff;
+}
+
+/* === Judul section item === */
+.admin-detail-order h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-left: 4px solid #38bdf8;
+    padding-left: 10px;
+}
+
+/* === Table Styling === */
+.table-orders {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.table-orders thead {
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.table-orders th,
+.table-orders td {
+    padding: 14px 12px;
+    text-align: center;
+}
+
+.table-orders th {
+    font-weight: 600;
+    color: #93c5fd;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.table-orders tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+.table-orders tbody tr:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* === Tombol Kembali === */
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    box-shadow: 0 10px 30px rgba(79, 70, 229, 0.4);
+    transition: 0.3s ease;
+}
+
+.btn-kembali:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(79, 70, 229, 0.6);
+}

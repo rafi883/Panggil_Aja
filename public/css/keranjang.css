@@ -1,0 +1,157 @@
+body{
+   margin:0;
+   height: 99vh;
+   font-family: "Podkova", serif;
+   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/background-web-panggil-aja.png);
+   align-content: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.keranjang{
+   display: flex;
+   justify-content: space-between;
+
+}
+
+.btn-back {
+    display: inline-block;
+    position: absolute;
+    z-index: 300;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+
+.btn-back:hover {
+   background-color: rgba(113, 230, 104, 1);
+}
+
+.btn-detailPesanan{
+
+    width: 9.5vw;
+    height: 3vh;
+    z-index: 300;
+    padding: 10px 18px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+
+.btn-detailPesanan:hover{
+    background-color: rgba(113, 230, 104, 1);
+}
+
+
+.container-kiri{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: "Podkova", serif;
+    padding: 3rem;
+    height: 90vh;
+    gap:1rem;
+    width: 40vw;
+    margin-top: 6rem;
+    border-radius: 30px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-left: 3rem;
+    justify-content: start;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+.gmbr-pesanan{
+    display: flex;
+    gap: 5px;
+
+    align-items: center;
+}
+
+.gmbr-pesanan img{
+    transition: all 0.3s ease;
+}
+
+.gmbr-pesanan img:hover{
+      transform: scale(1.05);
+}
+
+
+.container-kanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+    padding: 3rem;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 3rem;
+
+}
+
+.container-kanan form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form button{
+    width: 10rem;
+    height: 2rem;
+    font-family: "podkova", serif;
+    font-weight:800;
+    border-radius: 30px;
+    border-color: white;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(113, 230, 104, 1);
+    text-align: center;
+}
+
+form .input-email{
+    height: 34px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color:rgba(255, 255, 255, 0.4) ;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+
+}
+
+input::placeholder{
+    font-weight: bold;
+    color: rgb(147, 147, 147);
+    opacity: 1;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: start;
+    justify-content: center;
+    align-items: start;
+
+}
